@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -7247,6 +7247,8 @@ Various fiducial points for machine vision alignment.</description>
 <text x="167.64" y="91.44" size="1.778" layer="97">default to GND</text>
 <text x="208.28" y="27.94" size="1.778" layer="97">A. Weiss</text>
 <text x="2.286" y="24.638" size="1.778" layer="97">*2.375V &lt; VCC &lt; 3.465V</text>
+<text x="106.68" y="68.58" size="1.778" layer="97">I2C Read Address:</text>
+<text x="106.68" y="66.04" size="1.778" layer="97">I2C Write Address:</text>
 <wire x1="165.1" y1="96.52" x2="165.1" y2="93.98" width="1.016" layer="94"/>
 </plain>
 <instances>
