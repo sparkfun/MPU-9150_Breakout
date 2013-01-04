@@ -1,16 +1,21 @@
-These are the most up to date hardware and firmware files for the [MPU-9150 Breakout](https://www.sparkfun.com/products/11486) at SparkFun Electronics.
+These are the most up to date hardware and firmware files for the MPU-9150 Breakout:
+https://www.sparkfun.com/products/11486) at SparkFun Electronics.
 
 The MPU-9150 is an accelerometer, gyro, and magnetometer all in a single package with an I2C interface. 
 
 The hardware directory contains the Eagle design files and the firmware directory contains an Arduino library with an example that send raw sensor data out of the serial port. 
 
 Hardware License
-[Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/3.0/)
+====
+Creative Commons Attribution-ShareAlike
+http://creativecommons.org/licenses/by-sa/3.0/
 
 Author: Aaron Weiss @ SparkFun Electonics
 
 Firmware License
-From the original author [Jeff Rowberg](https://github.com/jrowberg/i2cdevlib) jeff@rowberg.net 
+====
+From the original author Jeff Rowberg, i2cdevlib.com, jeff@rowberg.net 
+Modified by Aaron Weiss, aaron@sparkfun.com
 
 The Arduino library code is placed under the MIT license:
 
