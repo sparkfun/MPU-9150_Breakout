@@ -1,7 +1,7 @@
 MPU-9150
 ====
 
-![breakout](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/4/8/6/11486-01_small.jpg)
+![https://www.sparkfun.com/products/11486](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/4/8/6/11486-01_small.jpg)
 
 These are the most up to date hardware and firmware files for the [MPU-9150 Breakout](https://www.sparkfun.com/products/11486) at SparkFun Electronics.
 
