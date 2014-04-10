@@ -420,7 +420,9 @@ class MPU6050 {
         // SMPLRT_DIV register
         uint8_t getRate();
         void setRate(uint8_t rate);
-
+        
+        uint8_t  checkMagStatus();
+     
         // CONFIG register
         uint8_t getExternalFrameSync();
         void setExternalFrameSync(uint8_t sync);
@@ -598,6 +600,9 @@ class MPU6050 {
         int16_t getRotationX();
         int16_t getRotationY();
         int16_t getRotationZ();
+
+        // MAG_*OUT_* registers
+        void getMag(int16_t* x, int16_t* y, int16_t* z);
 
         // EXT_SENS_DATA_* registers
         uint8_t getExternalSensorByte(int position);
@@ -831,7 +836,7 @@ class MPU6050 {
             uint8_t dmpGetRelativeQuaternion(Quaternion *data, const uint8_t* packet=0);
             uint8_t dmpGetGyro(int32_t *data, const uint8_t* packet=0);
             uint8_t dmpGetGyro(int16_t *data, const uint8_t* packet=0);
-            uint8_t dmpGetGyro(VectorInt16 *v, const uint8_t* packet=0);
+            uint8_t dmpGetGyro(VectorInt16 *v, const uint8_t* packet=0);                  		uint8_t dmpGetMag (VectorInt16 *v, const uint8_t* packet=0);
             uint8_t dmpSetLinearAccelFilterCoefficient(float coef);
             uint8_t dmpGetLinearAccel(int32_t *data, const uint8_t* packet=0);
             uint8_t dmpGetLinearAccel(int16_t *data, const uint8_t* packet=0);
@@ -934,7 +939,8 @@ class MPU6050 {
             uint8_t dmpGetGyro(int16_t *data, const uint8_t* packet=0);
             uint8_t dmpGetGyro(VectorInt16 *v, const uint8_t* packet=0);
             uint8_t dmpGetMag(int16_t *data, const uint8_t* packet=0);
-            uint8_t dmpSetLinearAccelFilterCoefficient(float coef);
+            uint8_t dmpGetMag(VectorInt16 *v, const uint8_t* packet=0);
+	    uint8_t dmpSetLinearAccelFilterCoefficient(float coef);
             uint8_t dmpGetLinearAccel(int32_t *data, const uint8_t* packet=0);
             uint8_t dmpGetLinearAccel(int16_t *data, const uint8_t* packet=0);
             uint8_t dmpGetLinearAccel(VectorInt16 *v, const uint8_t* packet=0);
@@ -992,3 +998,4 @@ class MPU6050 {
 };
 
 #endif /* _MPU6050_H_ */
+
