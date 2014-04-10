@@ -836,7 +836,8 @@ class MPU6050 {
             uint8_t dmpGetRelativeQuaternion(Quaternion *data, const uint8_t* packet=0);
             uint8_t dmpGetGyro(int32_t *data, const uint8_t* packet=0);
             uint8_t dmpGetGyro(int16_t *data, const uint8_t* packet=0);
-            uint8_t dmpGetGyro(VectorInt16 *v, const uint8_t* packet=0);                  		uint8_t dmpGetMag (VectorInt16 *v, const uint8_t* packet=0);
+            uint8_t dmpGetGyro(VectorInt16 *v, const uint8_t* packet=0);                  	
+            uint8_t dmpGetMag (VectorInt16 *v, const uint8_t* packet=0);
             uint8_t dmpSetLinearAccelFilterCoefficient(float coef);
             uint8_t dmpGetLinearAccel(int32_t *data, const uint8_t* packet=0);
             uint8_t dmpGetLinearAccel(int16_t *data, const uint8_t* packet=0);
