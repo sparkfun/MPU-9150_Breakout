@@ -706,12 +706,28 @@ uint8_t MPU6050::dmpGetGyro(int16_t *data, const uint8_t* packet) {
     data[2] = (packet[24] << 8) + packet[25];
     return 0;
 }
+uint8_t MPU6050::dmpGetGyro(VectorInt16 *v, const uint8_t* packet) {
+    // TODO: accommodate different arrangements of sent data (ONLY default supported now)
+    if (packet == 0) packet = dmpPacketBuffer;
+    v -> x = (packet[16] << 8) + packet[17];
+    v -> y = (packet[20] << 8) + packet[21];
+    v -> z = (packet[24] << 8) + packet[25];
+    return 0;
+}
 uint8_t MPU6050::dmpGetMag(int16_t *data, const uint8_t* packet) {
     // TODO: accommodate different arrangements of sent data (ONLY default supported now)
     if (packet == 0) packet = dmpPacketBuffer;
     data[0] = (packet[28] << 8) + packet[29];
     data[1] = (packet[30] << 8) + packet[31];
     data[2] = (packet[32] << 8) + packet[33];
+    return 0;
+}
+uint8_t MPU6050::dmpGetMag(VectorInt16 *v, const uint8_t* packet) {
+    // TODO: accommodate different arrangements of sent data (ONLY default supported now)
+    if (packet == 0) packet = dmpPacketBuffer;
+    v -> x = (packet[28] << 8) + packet[29];
+    v -> y = (packet[30] << 8) + packet[31];
+    v -> z = (packet[32] << 8) + packet[33];
     return 0;
 }
 // uint8_t MPU6050::dmpSetLinearAccelFilterCoefficient(float coef);
@@ -806,3 +822,4 @@ uint16_t MPU6050::dmpGetFIFOPacketSize() {
 }
 
 #endif /* _MPU6050_9AXIS_MOTIONAPPS41_H_ */
+
