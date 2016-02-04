@@ -1,5 +1,5 @@
 /*****************************************************************
-MPU9150_AHRS_directdata.ino
+MPU9150_AHRS.ino
 SFE_MPU9150 Library AHRS Data Fusion Example Code
 Kris Winer for Sparkfun Electronics
 Original Creation Date: April 8, 2014
@@ -43,7 +43,7 @@ MPU9150 over I2C. These are the only connections that need to be made:
 	 VDD ------------- 3.3V
 	 GND ------------- GND
 
-The LSM9DS0 has a maximum voltage of 3.5V. Make sure you power it
+The MPU9150 has a maximum voltage of 3.5V. Make sure you power it
 off the 3.3V rail! And either use level shifters between SCL
 and SDA or just use a 3.3V Arduino Pro.	  
 
