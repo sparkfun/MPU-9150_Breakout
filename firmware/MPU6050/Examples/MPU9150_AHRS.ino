@@ -22,9 +22,9 @@ This simple sketch will demo the following:
   gx, gy, gz, ax, ay, az, mx, my, and mz variables.
 * How to calculate actual acceleration, rotation speed, magnetic
   field strength using the  specified ranges as described in the data sheet:
-  http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/IMU/PS-MPU-9150A.pdf
+  https://cdn.sparkfun.com/datasheets/Sensors/IMU/MPU-9150-Datasheet.pdf
   and
-  http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/IMU/RM-MPU-9150A-00.pdf.
+  https://cdn.sparkfun.com/datasheets/Sensors/IMU/MPU-9150-Register-Map.pdf.
   
 In addition, the sketch will demo:
 * How to check for data updates using the data ready status register
